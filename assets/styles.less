@@ -1,5 +1,5 @@
 .reveal {
-    @basefont: 30px;
+    @basefont: 24px;
 
     font-size: @basefont;
 
@@ -9,8 +9,12 @@
       text-align: left;
     }
 
-    div.mediumtext {
+    p.mediumtext {
         font-size: @basefont - 8px;
+    }
+
+    p.smalltext {
+        font-size: @basefont - 16px;
     }
 
     .fragment.step-fade-in-then-out {
@@ -35,6 +39,7 @@
     }
 
     h1, h2, h3, h4, h5 {
+      font-family: 'Questrial', sans-serif;
       text-transform: none;
     }
 
@@ -43,6 +48,13 @@
             text-align: center;
         }
         h2 {
+            position: relative;
+            top: 50vh;
+            text-align: right;
+        }
+        p {
+            position: relative;
+            top: 50vh;
             text-align: right;
         }
     }
@@ -102,7 +114,7 @@
 		text-align: left; // matter of taste, makes imho sense
 		.col {
 			display: table-cell;
-			//vertical-align: top;
+			vertical-align: top;
 			width: 50%;
 			padding: 2% 0 2% 3%; // some vertical, and between columns
 			&:first-of-type { padding-left: 0; } // there's nothing before col1
@@ -133,5 +145,9 @@
 }
 
 .centered {
+    text-align: center;
+}
+
+.twitter-tweet {
     text-align: center;
 }
